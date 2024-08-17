@@ -85,4 +85,12 @@
 //
 // console.log(sortByPropertyValue(people, 'age'))
 
-
+// let array = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+// function extractSubarray(arr, st, e) {
+//     let newArr = arr.slice(st, e).length
+//     arr.splice(st, newArr)
+//     console.log('Extracted: ', newArr)
+//     return array
+// }
+//
+// console.log(extractSubarray(array, 1, 3))
