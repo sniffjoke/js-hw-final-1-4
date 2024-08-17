@@ -94,3 +94,70 @@
 // }
 //
 // console.log(extractSubarray(array, 1, 3))
+
+// let obj = { name: 'Alice' };
+// function addPropertyToObject(obj, k, v) {
+//     return obj[k] = v;
+// }
+// addPropertyToObject(obj, 'age', 30);
+//
+// console.log(obj)
+
+// const students = {
+//     Alice: [4, 5, 3],
+//     Bob: [3, 2, 4],
+//     Charlie: [5, 5, 5]
+// };
+//
+// function formatStudentGrades(arr) {
+//     return Object.entries(arr).map(item => {
+//         return item[0] + ': ' + item[1].join(',')
+//     })
+// }
+//
+// console.log(formatStudentGrades(students))
+
+// const library = {
+//     'The Great Gatsby': { genre: 'Fiction' },
+//     'To Kill a Mockingbird': { genre: 'Fiction' },
+//     1984: { genre: 'Science Fiction' },
+//     'Pride and Prejudice': { genre: 'Romance' },
+//     'The Catcher in the Rye': { genre: 'Fiction' },
+// };
+//
+// function getUniqueGenres(obj) {
+//     return [...new Set(Object.values(obj).map(item => Object.values(item).join('')))];
+// }
+//
+// console.log(getUniqueGenres(library))
+
+// const library = {
+//     'The Great Gatsby': { genre: 'Fiction' },
+//     'To Kill a Mockingbird': { genre: 'Fiction' },
+//     1984: { genre: 'Science Fiction' },
+//     'Pride and Prejudice': { genre: 'Romance' },
+//     'The Catcher in the Rye': { genre: 'Fiction' },
+// };
+//
+// function getUniqueGenres(obj) {
+//     return [...new Set(Object.values(obj).map(item => item.genre))];
+// }
+//
+// console.log(getUniqueGenres(library))
+
+const pairs = [
+    ['a', 1],
+    ['b', 2],
+    ['c', 3],
+];
+
+function createMapFromArray(arr) {
+    let newMap = new Map
+    arr.map(item => {
+        newMap.set(...item);
+    })
+    return newMap
+}
+
+console.log(createMapFromArray(pairs));
+
